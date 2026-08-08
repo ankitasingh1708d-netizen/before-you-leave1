@@ -643,35 +643,39 @@ const storyScenes = [
 
 
                     <p class="letter-ending">
-                        Always your cutie,<br>
-                        ❤️
-                    </p>
+    Always your cutie,<br>
+    ❤️
+</p>
 
-                </div>
+
+<!-- ==============================
+     CONTINUE — INSIDE LETTER
+============================== -->
+
+<button
+    class="story-button next-scene"
+    data-next="7"
+    id="letter-next"
+    type="button">
+
+    Continue ❤️
+
+</button>
+
+</div>
 
 
                 <!-- Old flap intentionally hidden by CSS -->
 
                 <div class="envelope-flap">
                 </div>
+                
 
 
             </div>
 
 
-            <!-- ==============================
-                 CONTINUE — BELOW LETTER
-            =============================== -->
-
-            <button
-                class="story-button next-scene"
-                data-next="7"
-                id="letter-next"
-                type="button">
-
-                Continue ❤️
-
-            </button>
+            
 
 
         </div>
