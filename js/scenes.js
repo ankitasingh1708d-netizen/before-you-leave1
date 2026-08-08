@@ -643,15 +643,7 @@ const storyScenes = [
 </button>
 
 
-                <button
-                    class="story-button next-scene hidden-button"
-                    data-next="7"
-                    id="letter-next"
-                    type="button">
-
-                    Continue ❤️
-
-                </button>
+               
 
             </div>
 
