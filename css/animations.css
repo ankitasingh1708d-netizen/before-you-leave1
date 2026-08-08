@@ -1,0 +1,455 @@
+/* ===========================================================
+   BEFORE YOU LEAVE ❤️
+   animations.css
+=========================================================== */
+
+/* ---------------- Fade Up ---------------- */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ---------------- Heart Beat ---------------- */
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    15%{
+
+        transform:scale(1.15);
+
+    }
+
+    30%{
+
+        transform:scale(1);
+
+    }
+
+    45%{
+
+        transform:scale(1.18);
+
+    }
+
+    60%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ---------------- Loading ---------------- */
+
+@keyframes loading{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ---------------- Aurora ---------------- */
+
+@keyframes auroraMove{
+
+    0%{
+
+        transform:translate(-40px,-30px) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(20px,20px) scale(1.1);
+
+    }
+
+    100%{
+
+        transform:translate(60px,-20px) scale(1);
+
+    }
+
+}
+
+
+/* ---------------- Floating ---------------- */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+/* ---------------- Glow ---------------- */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 10px rgba(255,77,141,.25);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 30px rgba(255,77,141,.55),
+        0 0 60px rgba(255,77,141,.35);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px rgba(255,77,141,.25);
+
+    }
+
+}
+
+
+/* ---------------- Twinkle ---------------- */
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
+
+
+/* ---------------- Rotate ---------------- */
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ---------------- Pulse ---------------- */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ---------------- Fade ---------------- */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ---------------- Slide Left ---------------- */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ---------------- Slide Right ---------------- */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* ---------------- Scale ---------------- */
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.7);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ---------------- Blur In ---------------- */
+
+@keyframes blurIn{
+
+    from{
+
+        opacity:0;
+        filter:blur(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        filter:blur(0);
+
+    }
+
+}
+
+
+/* ---------------- Heart Float ---------------- */
+
+@keyframes heartFloat{
+
+    0%{
+
+        transform:translateY(0) scale(.8);
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-180px) scale(1.4);
+        opacity:0;
+
+    }
+
+}
+
+
+/* ---------------- Flower Float ---------------- */
+
+@keyframes flowerFloat{
+
+    from{
+
+        transform:
+        translateY(-10vh)
+        rotate(0deg);
+
+    }
+
+    to{
+
+        transform:
+        translateY(120vh)
+        rotate(360deg);
+
+    }
+
+}
+
+
+/* ---------------- Shine ---------------- */
+
+@keyframes shine{
+
+    0%{
+
+        left:-100%;
+
+    }
+
+    100%{
+
+        left:150%;
+
+    }
+
+}
+
+
+/* ---------------- Music Spin ---------------- */
+
+.music-playing{
+
+    animation:
+    rotateSlow 5s linear infinite;
+
+}
+
+
+/* ---------------- Floating Card ---------------- */
+
+.glass-card{
+
+    animation:
+    fadeUp .8s ease,
+    floating 5s ease-in-out infinite;
+
+}
+
+
+/* ---------------- Heart ---------------- */
+
+.loading-heart{
+
+    animation:
+    heartbeat 1.2s infinite;
+
+}
+
+
+/* ---------------- Scene ---------------- */
+
+.scene{
+
+    animation:
+    fade .8s ease;
+
+}
+
+
+/* ---------------- Button ---------------- */
+
+#enter-btn{
+
+    animation:
+    glow 3s infinite;
+
+}
+
+#enter-btn:hover{
+
+    animation:none;
+
+}

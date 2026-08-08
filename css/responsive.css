@@ -1,0 +1,225 @@
+/* ===========================================================
+   BEFORE YOU LEAVE ❤️
+   responsive.css
+=========================================================== */
+
+/* ---------- Large Desktop ---------- */
+
+@media (min-width:1600px){
+
+    .glass-card{
+
+        max-width:850px;
+
+        padding:90px;
+
+    }
+
+    .main-title{
+
+        font-size:95px;
+
+    }
+
+    .description{
+
+        font-size:22px;
+
+    }
+
+}
+
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1200px){
+
+    .glass-card{
+
+        width:85%;
+
+        padding:55px;
+
+    }
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+    #app{
+
+        padding:25px;
+
+    }
+
+    .glass-card{
+
+        padding:45px;
+
+    }
+
+    .main-title{
+
+        font-size:65px;
+
+    }
+
+    .description{
+
+        font-size:17px;
+
+        line-height:1.9;
+
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    #app{
+
+        padding:20px;
+
+    }
+
+    .glass-card{
+
+        width:100%;
+
+        padding:35px 25px;
+
+        border-radius:24px;
+
+    }
+
+    .small-text{
+
+        font-size:13px;
+
+        letter-spacing:1px;
+
+    }
+
+    .main-title{
+
+        font-size:50px;
+
+        line-height:1.15;
+
+    }
+
+    .description{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    #enter-btn{
+
+        width:100%;
+
+        margin-top:35px;
+
+        padding:16px;
+
+        font-size:17px;
+
+    }
+
+    #music-btn{
+
+        width:55px;
+
+        height:55px;
+
+        right:20px;
+
+        top:20px;
+
+        font-size:22px;
+
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+    .glass-card{
+
+        padding:30px 20px;
+
+    }
+
+    .main-title{
+
+        font-size:42px;
+
+    }
+
+    .description{
+
+        font-size:15px;
+
+    }
+
+    .loading-heart{
+
+        font-size:45px;
+
+    }
+
+    #loading-screen h2{
+
+        font-size:18px;
+
+    }
+
+    .loader{
+
+        width:220px;
+
+    }
+
+}
+
+
+/* ---------- Very Small Devices ---------- */
+
+@media (max-width:360px){
+
+    .main-title{
+
+        font-size:36px;
+
+    }
+
+    .description{
+
+        font-size:14px;
+
+    }
+
+    #enter-btn{
+
+        font-size:15px;
+
+    }
+
+}

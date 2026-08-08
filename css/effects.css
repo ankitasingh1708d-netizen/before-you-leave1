@@ -1,0 +1,684 @@
+/* ==========================================================
+   BEFORE YOU LEAVE ❤️
+   effects.css
+   Dynamic Effects & Particles
+========================================================== */
+
+
+/* ==========================================================
+   CURSOR HEART TRAIL
+========================================================== */
+
+.trail-heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 9999;
+
+    will-change:
+        transform,
+        opacity;
+
+    text-shadow:
+        0 0 8px rgba(255, 77, 141, .55);
+
+}
+
+
+/* ==========================================================
+   CLICK HEART BURST
+========================================================== */
+
+.burst-heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 9999;
+
+    will-change:
+        transform,
+        opacity;
+
+    text-shadow:
+        0 0 12px rgba(255, 77, 141, .65);
+
+}
+
+
+/* ==========================================================
+   BACKGROUND FLOATING HEARTS
+========================================================== */
+
+.bg-heart {
+
+    position: absolute;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    will-change:
+        transform,
+        opacity;
+
+    text-shadow:
+        0 0 15px rgba(255, 77, 141, .5);
+
+}
+
+
+/* ==========================================================
+   STARS
+========================================================== */
+
+.background-star {
+
+    position: absolute;
+
+    display: block;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    will-change:
+        opacity,
+        transform;
+
+}
+
+
+/* ==========================================================
+   GLOW PARTICLES
+========================================================== */
+
+.glow-particle {
+
+    position: absolute;
+
+    display: block;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    will-change:
+        transform,
+        opacity;
+
+}
+
+
+/* ==========================================================
+   SHOOTING STAR
+========================================================== */
+
+.shooting-star {
+
+    position: fixed;
+
+    display: block;
+
+    pointer-events: none;
+
+    transform-origin: top center;
+
+    will-change:
+        transform,
+        opacity;
+
+}
+
+
+/* ==========================================================
+   CONFETTI
+========================================================== */
+
+#confetti-container {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 10000;
+
+}
+
+
+.confetti-piece {
+
+    position: absolute;
+
+    display: block;
+
+    pointer-events: none;
+
+    will-change:
+        transform,
+        opacity;
+
+}
+
+
+/* ==========================================================
+   FLOWING LIGHT ORBS
+========================================================== */
+
+.light-orb {
+
+    position: fixed;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 137, 180, .2),
+            rgba(255, 137, 180, 0)
+        );
+
+    filter: blur(10px);
+
+    opacity: .6;
+
+    animation:
+        orbFloat 12s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   SPARKLE
+========================================================== */
+
+.sparkle {
+
+    position: absolute;
+
+    width: 4px;
+
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 8px #fff,
+        0 0 18px rgba(255, 137, 180, .8);
+
+    pointer-events: none;
+
+    animation:
+        sparklePulse 2s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   GLOW LINE
+========================================================== */
+
+.glow-line {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.glow-line::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 70%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.25),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    animation:
+        shine 3s ease-in-out infinite;
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   HEART GLOW
+========================================================== */
+
+.heart-glow {
+
+    filter:
+        drop-shadow(
+            0 0 12px rgba(255, 77, 141, .55)
+        );
+
+    animation:
+        heartbeat 2s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   GLASS SHIMMER
+========================================================== */
+
+.glass-shimmer {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.glass-shimmer::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 60%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.08),
+            transparent
+        );
+
+    transform: skewX(-25deg);
+
+    animation:
+        glassShimmer 5s ease-in-out infinite;
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   AURORA EXTRA GLOW
+========================================================== */
+
+.aurora-blob {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(80px);
+
+    opacity: .25;
+
+    mix-blend-mode: screen;
+
+    will-change:
+        transform,
+        opacity;
+
+}
+
+
+.aurora-pink {
+
+    width: 300px;
+
+    height: 300px;
+
+    background:
+        rgba(255, 77, 141, .5);
+
+    top: -100px;
+
+    left: -80px;
+
+    animation:
+        auroraBlobOne 15s ease-in-out infinite
+        alternate;
+
+}
+
+
+.aurora-purple {
+
+    width: 350px;
+
+    height: 350px;
+
+    background:
+        rgba(139, 92, 246, .35);
+
+    bottom: -150px;
+
+    right: -100px;
+
+    animation:
+        auroraBlobTwo 18s ease-in-out infinite
+        alternate;
+
+}
+
+
+/* ==========================================================
+   FLOWER PETAL
+========================================================== */
+
+.petal {
+
+    position: fixed;
+
+    top: -40px;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 2;
+
+    will-change:
+        transform,
+        opacity;
+
+}
+
+
+/* ==========================================================
+   BUTTERFLY
+========================================================== */
+
+.butterfly {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    font-size: 25px;
+
+    z-index: 3;
+
+    animation:
+        butterflyFloat 12s ease-in-out infinite;
+
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes orbFloat {
+
+    0% {
+
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(80px, -50px, 0)
+            scale(1.15);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(-40px, 40px, 0)
+            scale(.95);
+
+    }
+
+}
+
+
+@keyframes sparklePulse {
+
+    0%,
+    100% {
+
+        opacity: .15;
+
+        transform:
+            scale(.5);
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        transform:
+            scale(1.5);
+
+    }
+
+}
+
+
+@keyframes glassShimmer {
+
+    0% {
+
+        left: -120%;
+
+    }
+
+    25% {
+
+        left: 150%;
+
+    }
+
+    100% {
+
+        left: 150%;
+
+    }
+
+}
+
+
+@keyframes auroraBlobOne {
+
+    0% {
+
+        transform:
+            translate(0, 0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate(220px, 100px)
+            scale(1.25);
+
+    }
+
+    100% {
+
+        transform:
+            translate(80px, 250px)
+            scale(.9);
+
+    }
+
+}
+
+
+@keyframes auroraBlobTwo {
+
+    0% {
+
+        transform:
+            translate(0, 0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translate(-180px, -120px)
+            scale(1.2);
+
+    }
+
+    100% {
+
+        transform:
+            translate(-80px, -240px)
+            scale(.9);
+
+    }
+
+}
+
+
+@keyframes butterflyFloat {
+
+    0% {
+
+        transform:
+            translate3d(0, 0, 0)
+            rotate(-5deg);
+
+    }
+
+    25% {
+
+        transform:
+            translate3d(80px, -50px, 0)
+            rotate(5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translate3d(20px, -120px, 0)
+            rotate(-4deg);
+
+    }
+
+    75% {
+
+        transform:
+            translate3d(-70px, -60px, 0)
+            rotate(6deg);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(0, 0, 0)
+            rotate(-5deg);
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE PERFORMANCE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .trail-heart {
+
+        font-size: 10px !important;
+
+    }
+
+    .burst-heart {
+
+        font-size: 14px !important;
+
+    }
+
+    .glow-particle {
+
+        opacity: .35;
+
+    }
+
+    .light-orb {
+
+        width: 80px;
+
+        height: 80px;
+
+    }
+
+    .aurora-pink {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+    .aurora-purple {
+
+        width: 240px;
+
+        height: 240px;
+
+    }
+
+}

@@ -1,0 +1,414 @@
+/* ===========================================================
+   BEFORE YOU LEAVE ❤️
+   style.css
+   Part 2A
+=========================================================== */
+
+/* ---------------- Google Font ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ---------------- Variables ---------------- */
+
+:root{
+
+    --bg:#050816;
+
+    --bg2:#0d1328;
+
+    --white:#ffffff;
+
+    --pink:#ff4d8d;
+
+    --lightPink:#ff89b4;
+
+    --glass:rgba(255,255,255,.08);
+
+    --glassBorder:rgba(255,255,255,.18);
+
+    --shadow:0 25px 60px rgba(0,0,0,.35);
+
+    --radius:28px;
+
+}
+
+
+/* ---------------- Reset ---------------- */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    overflow:hidden;
+
+    background:var(--bg);
+
+    color:var(--white);
+
+    font-family:'Poppins',sans-serif;
+
+    width:100%;
+
+    height:100vh;
+
+}
+
+
+/* ---------------- Background ---------------- */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(circle at top left,#ff4d8d33 0%,transparent 30%),
+
+        radial-gradient(circle at bottom right,#6d5bff33 0%,transparent 35%),
+
+        linear-gradient(180deg,#050816,#090d1e,#050816);
+
+    z-index:-10;
+
+}
+
+
+/* ---------------- Layers ---------------- */
+
+#stars-layer,
+
+#particles-layer,
+
+#aurora-layer,
+
+#flowers-layer,
+
+#hearts-layer{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+
+#aurora-layer{
+
+    background:
+
+        radial-gradient(circle at 20% 20%,#ff4d8d22,transparent 45%),
+
+        radial-gradient(circle at 80% 60%,#8b5cf622,transparent 45%);
+
+    filter:blur(90px);
+
+    animation:auroraMove 15s ease-in-out infinite alternate;
+
+}
+
+
+/* ---------------- App ---------------- */
+
+#app{
+
+    width:100%;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+
+/* ---------------- Scene ---------------- */
+
+.scene{
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    animation:fadeUp .8s ease;
+
+}
+
+.scene.active{
+
+    display:flex;
+
+}
+
+
+/* ---------------- Glass Card ---------------- */
+
+.glass-card{
+
+    width:min(700px,95%);
+
+    padding:65px;
+
+    text-align:center;
+
+    border-radius:var(--radius);
+
+    background:var(--glass);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--glassBorder);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ---------------- Text ---------------- */
+
+.small-text{
+
+    color:#ffd7e7;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+
+    font-size:15px;
+
+}
+
+
+.main-title{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:78px;
+
+    line-height:1.2;
+
+    color:white;
+
+    margin-bottom:25px;
+
+    text-shadow:0 0 25px rgba(255,77,141,.45);
+
+}
+
+
+.description{
+
+    max-width:520px;
+
+    margin:auto;
+
+    line-height:2;
+
+    font-size:18px;
+
+    color:#f5f5f5;
+
+}
+
+
+/* ---------------- Button ---------------- */
+
+#enter-btn{
+
+    margin-top:45px;
+
+    border:none;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    padding:18px 55px;
+
+    border-radius:100px;
+
+    background:linear-gradient(135deg,#ff4d8d,#ff8ab4);
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(255,77,141,.35);
+
+}
+
+#enter-btn:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+    box-shadow:0 25px 55px rgba(255,77,141,.5);
+
+}
+
+#enter-btn:active{
+
+    transform:scale(.96);
+
+}
+
+
+/* ---------------- Music ---------------- */
+
+#music-btn{
+
+    position:fixed;
+
+    right:30px;
+
+    top:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+    z-index:1000;
+
+    transition:.35s;
+
+}
+
+#music-btn:hover{
+
+    transform:rotate(15deg) scale(1.08);
+
+}
+
+
+/* ---------------- Overlay ---------------- */
+
+#transition-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:black;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+
+/* ---------------- Loading Screen ---------------- */
+
+#loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050816;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+.loading-heart{
+
+    font-size:60px;
+
+    animation:heartbeat 1.2s infinite;
+
+}
+
+
+#loading-screen h2{
+
+    margin:20px 0;
+
+    font-weight:500;
+
+}
+
+
+.loader{
+
+    width:260px;
+
+    height:10px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:#222;
+
+}
+
+
+.loader-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#ff4d8d,#ff8ab4);
+
+    animation:loading 3s forwards;
+
+}

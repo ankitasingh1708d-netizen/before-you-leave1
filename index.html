@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#050816">
+
+    <meta name="description"
+          content="Before You Leave... ❤️">
+
+
+    <title>Before You Leave... ❤️</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animations.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="css/story.css">
+
+    <link rel="stylesheet"
+          href="css/effects.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         LOADING SCREEN
+    ====================================================== -->
+
+    <div id="loading-screen">
+
+        <div class="loading-heart">
+            ❤️
+        </div>
+
+        <h2>
+            Loading my heart...
+        </h2>
+
+        <div class="loader">
+
+            <div class="loader-fill"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BACKGROUND LAYERS
+    ====================================================== -->
+
+    <div id="stars-layer"></div>
+
+    <div id="particles-layer"></div>
+
+    <div id="aurora-layer"></div>
+
+    <div id="hearts-layer"></div>
+
+    <div id="flowers-layer"></div>
+
+
+
+    <!-- =====================================================
+         MUSIC BUTTON
+    ====================================================== -->
+
+    <button
+        id="music-btn"
+        type="button"
+        aria-label="Toggle background music">
+
+        🔇
+
+    </button>
+
+
+
+    <!-- =====================================================
+         CURSOR EFFECT LAYER
+    ====================================================== -->
+
+    <div id="cursor-container"></div>
+
+
+
+    <!-- =====================================================
+         MAIN APPLICATION
+    ====================================================== -->
+
+    <main id="app">
+
+
+        <!-- =================================================
+             LANDING SCENE
+        ================================================== -->
+
+        <section
+            id="scene-1"
+            class="scene active">
+
+
+            <div class="glass-card">
+
+
+                <p class="small-text">
+
+                    Every love story...
+
+                </p>
+
+
+                <h1 class="main-title">
+
+                    Before You Leave...
+
+                </h1>
+
+
+                <!--
+                    typing.js uses .typing-text
+                    for the cinematic typing effect.
+                -->
+
+                <p
+                    class="description typing-text"
+                    aria-live="polite">
+
+                    Please give me just
+                    two minutes.
+
+                </p>
+
+
+                <button
+                    id="enter-btn"
+                    type="button">
+
+                    ❤️ Enter
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TRANSITION OVERLAY
+    ====================================================== -->
+
+    <div id="transition-overlay"></div>
+
+
+
+    <!-- =====================================================
+         BACKGROUND MUSIC
+    ====================================================== -->
+
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto">
+
+        <source
+            src="assets/songs/theme.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/scenes.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/hearts.js"></script>
+
+    <script src="js/typing.js"></script>
+
+    <script src="js/music.js"></script>
+
+    <script src="js/cursor.js"></script>
+
+    <script src="js/particles.js"></script>
+
+    <script src="js/confetti.js"></script>
+
+
+</body>
+
+</html>
