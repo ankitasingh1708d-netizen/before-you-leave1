@@ -485,171 +485,199 @@ const storyScenes = [
     },
 
 
-    /* ======================================================
-       06 — LETTER
-    ====================================================== */
+  /* ======================================================
+   06 — LETTER
+====================================================== */
 
-    {
-        id: "scene-letter",
+{
+    id: "scene-letter",
 
-        className: "letter-scene",
+    className: "letter-scene",
 
-        content: `
+    content: `
 
-            <div class="story-card glass-card letter-card">
+        <div class="story-card glass-card letter-card">
 
-                <span class="scene-number">
-                    06
-                </span>
+            <span class="scene-number">
+                06
+            </span>
 
-                <p class="small-text">
-                    A little letter...
-                </p>
-
-
-                <div
-                    class="envelope"
-                    id="love-envelope">
+            <p class="small-text">
+                A little letter...
+            </p>
 
 
-                    <div class="envelope-back">
-                    </div>
+            <!-- ==============================
+                 OPEN ENVELOPE
+            =============================== -->
+
+            <div
+                class="envelope"
+                id="love-envelope">
 
 
-                   <div class="letter-paper">
+                <div class="envelope-back">
+                </div>
 
-    <span class="letter-decoration">
-        ♡
-    </span>
 
-    <p class="letter-title">
-        To my Kartik,
-    </p>
+                <!-- ==========================
+                     LETTER PAPER
+                =========================== -->
 
-    <p>
-        I'm sorry that I hurt you and gave you
-        trust issues just to make you realise
-        how I felt. I know that wasn't the right
-        way to handle things, and I'm genuinely
-        sorry for that.
-    </p>
+                <div class="letter-paper">
 
-    <p>
-        I know one apology can't make everything
-        okay in a moment. Trust doesn't work that
-        way. But I want you to know that I'll be
-        more careful from now on — about you,
-        about us, and about the limits we should
-        both remember.
-    </p>
+                    <span class="letter-decoration">
+                        ♡
+                    </span>
 
-    <p>
-        Because I know you're with me, and honestly,
-        doing these little things for you never feels
-        like a burden to me. I love taking care of
-        you. I love being there for you.
-    </p>
 
-    <p>
-        And you are my
-        <strong>Vitamin K</strong>
-        for sure. ❤️
-    </p>
+                    <p class="letter-title">
+                        To my Kartik,
+                    </p>
 
-    <p>
-        Kartik, this is just the beginning of our
-        story. If we really want to go all the way
-        together — and I know we both do — then
-        maybe we need to understand each other a
-        little better, value each other's feelings,
-        and learn from the things that hurt us.
-    </p>
 
-    <p>
-        The rest... I'm here.
-        And you are here too.
-        That's what matters to me the most.
-    </p>
+                    <p>
+                        I'm sorry that I hurt you and gave you
+                        trust issues just to make you realise
+                        how I felt. I know that wasn't the right
+                        way to handle things, and I'm genuinely
+                        sorry for that.
+                    </p>
 
-    <p>
-        And please, try to control your anger a
-        little too. I'm sensitive, yaar... and I know
-        you are sensitive too.
-    </p>
 
-    <p>
-        Your harsh behaviour hurts me sometimes
-        more than any punishment ever could.
-        So please understand me too.
-        I don't want us to hurt each other just
-        because we're angry.
-    </p>
+                    <p>
+                        I know one apology can't make everything
+                        okay in a moment. Trust doesn't work that
+                        way. But I want you to know that I'll be
+                        more careful from now on — about you,
+                        about us, and about the limits we should
+                        both remember.
+                    </p>
 
-    <p>
-        And don't worry...
-        your cutie can be forgiven too, right? 🥺
-        I've forgiven you so many times,
-        and I know you've forgiven me too.
-        That's what we do for each other.
-    </p>
 
-    <p>
-        I don't want this little fight to become
-        something bigger than what we have.
-        I just want us to learn from it,
-        understand each other a little more,
-        and love each other a little better.
-    </p>
+                    <p>
+                        Because I know you're with me, and honestly,
+                        doing these little things for you never feels
+                        like a burden to me. I love taking care of
+                        you. I love being there for you.
+                    </p>
 
-    <p>
-        So yes...
-        I'm sorry.
-        I'll be more careful.
-        I'll remember my limits.
-        And I'll always try to protect
-        what we have.
-    </p>
 
-    <p>
-        And Kartik...
-        <strong>I love you.</strong>
-        More than this little website could
-        ever explain. ❤️
-    </p>
+                    <p>
+                        And you are my
+                        <strong>Vitamin K</strong>
+                        for sure. ❤️
+                    </p>
 
-    
-    </div>
 
-    <p class="letter-ending">
-        Always your cutie,<br>
-        ❤️
-    </p>
+                    <p>
+                        Kartik, this is just the beginning of our
+                        story. If we really want to go all the way
+                        together — and I know we both do — then
+                        maybe we need to understand each other a
+                        little better, value each other's feelings,
+                        and learn from the things that hurt us.
+                    </p>
 
-</div>
-                    <div class="envelope-flap">
-                    </div>
 
+                    <p>
+                        The rest... I'm here.
+                        And you are here too.
+                        That's what matters to me the most.
+                    </p>
+
+
+                    <p>
+                        And please, try to control your anger a
+                        little too. I'm sensitive, yaar... and I know
+                        you are sensitive too.
+                    </p>
+
+
+                    <p>
+                        Your harsh behaviour hurts me sometimes
+                        more than any punishment ever could.
+                        So please understand me too.
+                        I don't want us to hurt each other just
+                        because we're angry.
+                    </p>
+
+
+                    <p>
+                        And don't worry...
+                        your cutie can be forgiven too, right? 🥺
+                        I've forgiven you so many times,
+                        and I know you've forgiven me too.
+                        That's what we do for each other.
+                    </p>
+
+
+                    <p>
+                        I don't want this little fight to become
+                        something bigger than what we have.
+                        I just want us to learn from it,
+                        understand each other a little more,
+                        and love each other a little better.
+                    </p>
+
+
+                    <p>
+                        So yes...
+                        I'm sorry.
+                        I'll be more careful.
+                        I'll remember my limits.
+                        And I'll always try to protect
+                        what we have.
+                    </p>
+
+
+                    <p>
+                        And Kartik...
+                        <strong>I love you.</strong>
+                        More than this little website could
+                        ever explain. ❤️
+                    </p>
+
+
+                    
+
+
+                    <p class="letter-ending">
+                        Always your cutie,<br>
+                        ❤️
+                    </p>
 
                 </div>
 
-<button
-    class="story-button next-scene"
-    data-next="7"
-    id="letter-next"
-    type="button">
 
-    Continue ❤️
+                <!-- Old flap intentionally hidden by CSS -->
 
-</button>
+                <div class="envelope-flap">
+                </div>
 
-
-               
 
             </div>
 
-        `
-    },
 
+            <!-- ==============================
+                 CONTINUE — BELOW LETTER
+            =============================== -->
+
+            <button
+                class="story-button next-scene"
+                data-next="7"
+                id="letter-next"
+                type="button">
+
+                Continue ❤️
+
+            </button>
+
+
+        </div>
+
+    `
+},
 
     /* ======================================================
        07 — FUTURE
