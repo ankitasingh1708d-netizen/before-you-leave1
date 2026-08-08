@@ -932,7 +932,8 @@
 }
 
 /* ==========================================================
-   MOBILE LETTER — FULL WIDTH + BUTTON BELOW
+   MOBILE LETTER — FULL WIDTH
+   CONTINUE BUTTON BELOW LETTER
 ========================================================== */
 
 @media (max-width: 768px) {
@@ -945,18 +946,27 @@
         overflow: visible !important;
     }
 
+    /* Envelope container */
+
     .letter-card .envelope {
         width: 100% !important;
         height: auto !important;
         min-height: 0 !important;
         margin: 20px auto 0 !important;
         position: relative !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
     }
 
-    /* Letter itself */
+    /* Envelope */
+
+    .letter-card .envelope-back {
+        width: 100% !important;
+        height: 190px !important;
+        left: 0 !important;
+        bottom: 0 !important;
+    }
+
+    /* Letter */
+
     .letter-card .letter-paper {
         position: relative !important;
 
@@ -981,19 +991,23 @@
         z-index: 5 !important;
     }
 
-    /* Letter text */
-    .letter-card .letter-paper p {
-        font-size: 14px !important;
-        line-height: 1.7 !important;
-        margin: 13px 0 !important;
-    }
+    /* Letter title */
 
     .letter-card .letter-title {
         font-size: 30px !important;
         margin-bottom: 18px !important;
     }
 
+    /* Letter text */
+
+    .letter-card .letter-paper p {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+        margin: 13px 0 !important;
+    }
+
     /* Shayari */
+
     .letter-card .love-shayari {
         margin-top: 22px !important;
         padding: 14px !important;
@@ -1005,16 +1019,14 @@
         line-height: 1.8 !important;
     }
 
-    /* Ending */
+    /* Letter ending */
+
     .letter-card .letter-ending {
         font-size: 23px !important;
         margin-top: 22px !important;
     }
 
-
-    /* ======================================================
-       CONTINUE BUTTON — BELOW THE LETTER
-    ====================================================== */
+    /* Continue button */
 
     #letter-next {
         position: relative !important;
@@ -1034,13 +1046,14 @@
         z-index: 20 !important;
     }
 
-
-    /* Old envelope/button positioning should not interfere */
+    /* Old open button */
 
     #open-letter-btn {
         display: none !important;
     }
 }
+
+
 /* ==========================================================
    SMALL MOBILE
 ========================================================== */
@@ -1072,11 +1085,11 @@
     }
 
     .envelope {
-        height: 205px;
+        height: auto;
     }
 
     .letter-paper {
-        height: 188px;
+        height: 440px;
     }
 
 }
