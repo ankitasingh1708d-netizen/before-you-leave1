@@ -931,121 +931,166 @@
 
 }
 
-
 /* ==========================================================
-   MOBILE
+   FINAL MOBILE LETTER FIX
 ========================================================== */
 
 @media (max-width: 768px) {
 
-    .story-scene {
-        padding: 20px 12px;
+    /* Letter scene card */
+
+    .letter-card {
+
+        width: 94vw !important;
+
+        max-width: 94vw !important;
+
+        padding-left: 12px !important;
+
+        padding-right: 12px !important;
+
+        overflow: visible !important;
+
     }
 
-    .story-card {
-        width: 100%;
-        max-height: 92vh;
-        padding: 35px 20px;
-        border-radius: 22px;
+
+    /* Envelope */
+
+    .letter-card .envelope {
+
+        width: 100% !important;
+
+        height: 500px !important;
+
+        margin: 30px auto 20px !important;
+
+        position: relative;
+
     }
 
-    .scene-description {
-        font-size: 15px;
-        line-height: 1.8;
+
+    /* Envelope base */
+
+    .letter-card .envelope-back {
+
+        width: 100% !important;
+
+        height: 230px !important;
+
+        bottom: 0 !important;
+
+        left: 0 !important;
+
     }
 
-    .memory-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+
+    /* Letter */
+
+    .letter-card .letter-paper {
+
+        left: 12px !important;
+
+        width: calc(100% - 24px) !important;
+
+        height: 390px !important;
+
+        bottom: 75px !important;
+
+        padding: 28px 22px !important;
+
+        box-sizing: border-box !important;
+
+        transform: none !important;
+
+        overflow-y: auto !important;
+
+        z-index: 5 !important;
+
     }
 
-    .memory-card {
-        min-height: 115px;
-        padding: 15px 8px;
+
+    /* Letter heading */
+
+    .letter-card .letter-title {
+
+        font-size: 32px !important;
+
+        margin-bottom: 18px !important;
+
     }
 
-    .memory-card span {
-        font-size: 25px;
+
+    /* Letter text */
+
+    .letter-card .letter-paper p {
+
+        font-size: 13px !important;
+
+        line-height: 1.75 !important;
+
+        margin: 12px 0 !important;
+
     }
 
-    .memory-card p {
-        font-size: 12px;
+
+    /* Shayari */
+
+    .letter-card .love-shayari {
+
+        margin-top: 22px !important;
+
+        padding: 15px !important;
+
+        text-align: center !important;
+
     }
 
-    .timeline {
-        margin-top: 25px;
+
+    .letter-card .love-shayari p {
+
+        font-size: 13px !important;
+
+        line-height: 1.8 !important;
+
     }
 
-    .timeline-item {
-        gap: 13px;
+
+    /* Ending */
+
+    .letter-card .letter-ending {
+
+        font-size: 24px !important;
+
+        line-height: 1.5 !important;
+
+        margin-top: 25px !important;
+
     }
 
-    .timeline-dot {
-        flex-basis: 40px;
-        width: 40px;
-        height: 40px;
-        font-size: 17px;
+
+    /* ONLY ONE Continue button */
+
+    #letter-next {
+
+        display: inline-flex !important;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin: 20px auto 10px !important;
+
+        min-width: 190px;
+
     }
 
-    .timeline-line {
-        margin-left: 20px;
-    }
 
-    .trust-point {
-        padding: 14px;
-        gap: 12px;
-    }
+    /* Old letter button should never appear */
 
-    .promise-box {
-        padding: 20px;
-    }
+    #open-letter-btn {
 
-    .future-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+        display: none !important;
 
-    .future-card {
-        padding: 20px 10px;
-    }
-
-    .envelope {
-        width: 94%;
-        height: 235px;
-    }
-
-    .letter-paper {
-        height: 215px;
-        padding: 20px;
-    }
-
-    .envelope-flap {
-        height: 120px;
-    }
-
-    .envelope-back::before {
-        border-width: 0 0 170px 180px;
-    }
-
-    .envelope-back::after {
-        border-width: 170px 180px 0 0;
-    }
-
-    .envelope.opened .letter-paper {
-        transform: translateY(-110px);
-    }
-
-    .letter-paper p {
-        font-size: 10px;
-    }
-
-    .letter-title {
-        font-size: 27px;
-    }
-
-    .choice-button {
-        width: 100%;
-        max-width: 300px;
     }
 
 }
